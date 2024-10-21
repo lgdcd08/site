@@ -1,1 +1,42 @@
+@charset "UTF-8" ;
+
+/***** bREAKPOINTS ******/
+
+/* Smartphome protait ******/
+
+ @media ( min-width: 576px ) {
+    body {
+                background-color:  #00fff0
+ }}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/* Smartphome Landscape ******/
+@media ( min-width: 992px ) {
+    body {
+                background-color:  #ffff00;
+            
+ }}
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*>
+
+/* Smartphome PCS / Notbooks >>>>>>>>>>>>>>>>>>>>>>>> ******/
+@media ( min-width: 992px ) {
+    body {
+                background-color:  #ffff00;
+            
+ }}
+
+/* Smartphome PCS / Notbooks >>>>>>>>>>>>>>>>>>>>>>>> ******/
+@media ( min-width: 992px ) {
+    body {
+                background-color:  #ffff00;
+             }}
+
+/* Tablet >>>>>>>>>>>>>>>>>>>>>>>> ******/
+@media ( min-width: 992px ) {
+    body {
+                background-color:  #ffff00;
+            
+ }}
 @charset "UTF-8"; 
