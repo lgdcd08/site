@@ -1,42 +1,111 @@
-@charset "UTF-8" ;
+@charset "UTF-8";
+
+/* Importação de font (google fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 
 /***** bREAKPOINTS ******/
 
-/* Smartphome protait ******/
+/*Layout*/
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    /* 1em é igual a 100% que é o tamanho padrão do dispositivo */
+}
 
- @media ( min-width: 576px ) {
-    body {
-                background-color:  #00fff0
- }}
+.container {
+    margin: 0 auto;
+    /* centralizar o container*/
+}
+
+/* Smartphome portrait ******/
+@media (min-width:768px) {
+
+    /* Cabeçalho*/
+    .container {
+        max-width: 620px;
+    }
+
+    #logo img {
+        margin: 10px 0px 0px 0px;
+    }
+}
+
+@media (min-width: 576px) {}
+
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /* Smartphome Landscape ******/
-@media ( min-width: 992px ) {
-    body {
-                background-color:  #ffff00;
-            
- }}
+@media (min-width: 576px) {
 
+    /*cabeçalho*/
+    #logo img {
+        margin: 10px 0px 0x 0x;
+    }
+
+    .container {
+        max-width: 540px;
+        background: #ffff00;
+
+    }
+}
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*>
 
 /* Smartphome PCS / Notbooks >>>>>>>>>>>>>>>>>>>>>>>> ******/
-@media ( min-width: 992px ) {
-    body {
-                background-color:  #ffff00;
-            
- }}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+        background-color: #ff009d;
+    }
+
+    header {
+        height: 150;
+    }
+
+    #logo img {
+        width: 128px;
+        height: 128px;
+    }
+}
 
 /* Smartphome PCS / Notbooks >>>>>>>>>>>>>>>>>>>>>>>> ******/
-@media ( min-width: 992px ) {
-    body {
-                background-color:  #ffff00;
-             }}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+        background-color: #ff009d;
+    }
 
-/* Tablet >>>>>>>>>>>>>>>>>>>>>>>> ******/
-@media ( min-width: 992px ) {
-    body {
-                background-color:  #ffff00;
-            
- }}
-@charset "UTF-8"; 
+    header {
+        height: 150;
+    }
+
+    #logo img {
+        width: 128px;
+        height: 128px;
+    }
+}
+
+/* Telas full hd >>>>>>>>>>>>>>>>>>>>>>>> ******/
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1360px;
+        background-color: #7d5b8c;
+    }
+
+    header {
+        height: 200px;
+    }
+
+    #logo img {
+        width: 176px;
+        height: 176px;
+    }
+}
