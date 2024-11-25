@@ -5,7 +5,7 @@
 
 /*Variaveis*/
 :root {
-    --azul: #41442a;
+    --azul: #e66a18;
     --branco: #fff;
 
 }
@@ -34,24 +34,26 @@ body {
 }
 .botao {
     text-decoration: none;
-    color: var(--azul);
+    color: var(--branco);
     font-size: 1.3em;
     font-weight: 700;
     background-color: var(--vermelho);
-    width: 180px;
+    width: px;
     padding: 10px 0px;
-    border: 2px solid(--branco);
+    border: 2px solid(--vermelho);
     border-radius: 25px;
     align-self: center;
-    margin-top: 10px;
+    margin-top: 130px;
 }
+
+/* FIM DO Lyout
 /* Smartphome portrait ***** 
 
     /* Cabeçalho*/
 
 header {
     height: 100px;
-    background-color: 
+    background-color: rgb(12, 12, 12);
 }
 
 #logo img {
@@ -85,10 +87,10 @@ nav ul {
     background-color: var(--azul);
     list-style: none;
     /*remover bullets*/
-    width: 65%;
+    width: 50%;
     position: fixed;
-    top: 80px;
-    right: -65%;
+    top: 100px;
+    right: -50%;
     transition: all 0.5s;
 }
 
@@ -104,10 +106,10 @@ nav ul li a {
     text-decoration: none;
     /*remover sublinhado*/
 }
-   /* Banner*/
+   /* Banner*********/
 main{
     height: 40vh;  /* como nao sabe o tamanho da tela põe em vh e nao % */
-    background: url( img/banner2.jpg);
+    background: url( img/banner22-min.jpg);
     background-size: cover ;
     background-position: center;
     display: flex;
@@ -126,8 +128,21 @@ main{
         font-size: 2em;
 
     }
-
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+    /******* Destaque *******/
+    #destaque {
+        background: url(img/baner3.jpg);
+        background-size: cover;
+        background-position: center;
+        /* espaçamento interno para não encostar na borda da tela do dispositivo */
+        padding: 50px 15px;
+    }
+    
+    /* Atenção!!! Organizando o container após o destaque o estilo é aplicado apenas ao container da seção de destaque */
+    #destaque .container {
+        /*flex-direction: colum;*/
+       /*align-items: center;*/
+       color: #66ff00;
+/*FIM DO SMARTFON PORTRATIL<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /* Smartphome Landscape ******/
 @media (min-width: 576px) {
@@ -139,7 +154,6 @@ main{
 
     .container {
         max-width: 540px;
-        background:
 
     }
 }
@@ -150,17 +164,17 @@ main{
         height: 50%;
     }
 }
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*>
+/*FIM DO LADSCAPE<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*>
 
 /* Smartphome PCS / Notbooks >>>>>>>>>>>>>>>>>>>>>>>> ******/
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;
-        background-color:
+      
     }
     #logo img {
         width: 128px;
-        height: 128px;
+        height: #f009f0;
     }
 }
 
@@ -168,7 +182,7 @@ main{
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;
-        background-color:;
+ 
         display: flex;
     }
 
@@ -184,8 +198,7 @@ main{
     label {
         display: none;
     }
-    nav ul{
-         width: 100%;
+    nav ul{ width: 100%;
          height: auto;
          position: right;
          background-color: transparent; 
@@ -201,12 +214,13 @@ main{
         color: var(--vermelho);
     }
 }
-
+/*<<<<<<<<<<<<FIM PCS NOTBOOK>>>>>>>>>>>>
 /* Telas full hd >>>>>>>>>>>>>>>>>>>>>>>> ******/
-@media (min-width: 1400px) {
+@media (min-width: 1400px) 
+/*CABEÇALHO*/
+{
     .container {
         max-width: 1360px;
-        background-color:;
     }
 
     header {
